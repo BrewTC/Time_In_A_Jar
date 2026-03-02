@@ -8,7 +8,30 @@
 body, .wp-block-group {margin:0;}
 img {max-width:100%; height:auto;}
 .season-grid {display:flex; flex-direction:column; gap:24px;}
-@media (max-width:600px){.season-grid{grid-template-columns:1fr;}}
+.section {
+  margin-top:80px;
+}
+.card {
+  background:#FFFFFF;
+  padding:48px 28px;
+  border-radius:24px;
+}
+@media (max-width:600px){
+  .card { padding:32px 20px; }
+}
+
+#oneday {
+  scroll-margin-top: 40px;
+}
+
+.link-soft {
+  color:#333;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.link-soft:hover {
+  opacity:0.7;
+}
 </style>
 </head>
 <body>
@@ -29,12 +52,19 @@ img {max-width:100%; height:auto;}
 </h1>
 
 <h1 style="font-size:clamp(28px,8vw,42px); font-weight:500; margin-bottom:20px; letter-spacing:1px;">
-  一段被安排好的四季時間
+  用一天的時間完成製作，<br>
+    讓時間在之後慢慢發生。
 </h1>
-  
-<p style="font-size:22px; opacity:0.8;">
-為什麼我們把發酵設計成三個月，而不是一個下午？
+
+<p style="margin-top:24px;">
+  <a href="#oneday" class="link-soft">
+    直接查看 4/11 一日體驗
+  </a>
 </p>
+  
+<!-- <p style="font-size:22px; opacity:0.8;">
+為什麼我們把發酵設計成三個月，而不是一個下午？
+</p> -->
 
 
 </div>
@@ -70,14 +100,108 @@ img {max-width:100%; height:auto;}
 <div style="height:80px;"></div>
 
 <!-- 核心概念區 -->
-<div style="background:#FFFFFF;
-            padding:70px 60px;
-            border-radius:24px;">
+<div class="card">
 
 <blockquote style="font-size:28px; text-align:center; margin:0; line-height:1.8;">
-我們不是在教你做一個東西，<br>
-我們是在幫你安排一段會持續發生的時間。
+我們不是只教你做一個東西，<br>
+我們幫你安排一段會持續發生的時間。
 </blockquote>
+
+<p style="text-align:center; margin-top:20px; opacity:0.8; font-size:16px;">
+這也是為什麼，我們選擇把它設計成<br>
+「一日完成，時間延續」。
+</p>
+
+</blockquote>
+
+</div>
+
+<div style="height:60px;"></div>
+<!-- 一日體驗課程區塊 -->
+<div class="card" id="oneday">
+
+<h2 style="font-weight:500; text-align:center;">
+時間入罐・一日體驗
+</h2>
+
+<p style="text-align:center; margin-top:20px; opacity:0.8;">
+用一天的時間完成製作，<br>
+讓時間在之後慢慢發生。
+</p>
+
+<div style="height:50px;"></div>
+
+<p>
+這不是完整的四季計畫。<br>
+而是一個，把「做器物」與「裝味道」放進同一天完成的體驗版本。
+</p>
+
+<p style="margin-top:30px;">
+你會在一天之內：
+</p>
+
+<ul style="padding-left:20px; margin-top:20px;">
+  <li>親手製作一只陶罐</li>
+  <li>完成一罐可立即帶回家的玻璃罐漬物</li>
+</ul>
+
+<p style="margin-top:30px;">
+陶罐會在課程後進行燒製，<br>
+約一個月後完成。<br>
+你可以選擇回來取，或由我們寄送給你。
+</p>
+
+<div style="height:60px;"></div>
+
+<h3 style="font-weight:500;">課程時間與梯次</h3>
+
+<p><strong>日期｜</strong>4 / 11（六）</p>
+
+<div style="margin-top:30px;">
+<strong>第一梯次</strong>
+<ul style="padding-left:20px; margin-top:10px;">
+  <li>09:00 – 12:00｜陶罐製作</li>
+  <li>13:00 – 15:00｜漬物製作</li>
+</ul>
+</div>
+
+<div style="margin-top:30px;">
+<strong>第二梯次</strong>
+<ul style="padding-left:20px; margin-top:10px;">
+  <li>09:00 – 12:00｜漬物製作</li>
+  <li>13:00 – 15:00｜陶罐製作</li>
+</ul>
+</div>
+
+<p style="margin-top:30px;">
+每一梯次人數上限為 10 位，當日共兩梯次。
+</p>
+
+<div style="height:60px;"></div>
+
+<h3 style="font-weight:500;">注意事項</h3>
+
+<ul style="padding-left:20px; margin-top:20px;">
+  <li>國小（含）以下參加者，需至少一位大人陪同</li>
+  <li>若有第二位大人陪同，現場需另收場地清潔費 100 元</li>
+  <li>陶罐約一個月後完成，可自取或寄送（運費另計）</li>
+</ul>
+
+<div style="height:60px;"></div>
+
+<p style="text-align:center;">
+<a href="https://forms.gle/jAv4hEUQs3CJ68k68"
+   target="_blank"
+   style="display:inline-block;
+          padding:16px 36px;
+          border-radius:999px;
+          background:#000;
+          color:#fff;
+          text-decoration:none;
+          font-size:18px;">
+前往報名一日體驗
+</a>
+</p>
 
 </div>
 
@@ -97,12 +221,14 @@ img {max-width:100%; height:auto;}
 <!-- <br> -->
 
 <p><strong>2｜裝味道</strong><br>
-在季節最適合的時候，領回自己的陶罐，完成漬物並封存。</p>
+在季節最適合的時候，使用乾淨的玻璃容器，完成漬物並封存。</p>
 
 <!-- <br> -->
 
 <p><strong>3｜陪它變化</strong><br>
-發酵不會在教室結束，我們會陪你走過關鍵時間點。</p>
+發酵不會在教室結束，  
+關鍵的變化，會在你回到生活後發生。
+</p>
 
 </div>
 
@@ -177,9 +303,7 @@ img {max-width:100%; height:auto;}
 
 <div style="height:40px;"></div>
 
-<div style="background:#FFFFFF;
-            padding:60px;
-            border-radius:24px;">
+<div class="card">
 
 <ul style="padding-left:20px; font-size:20px;">
 <li>如果你想要快速完成 —— 這可能不適合你</li>
@@ -191,9 +315,13 @@ img {max-width:100%; height:auto;}
 
 <div style="height:80px;"></div>
 
-<div style="background:linear-gradient(135deg,#FDF6E3 0%,#FADADD 50%,#EAF7F2 100%);
+<!-- <div style="background:linear-gradient(135deg,#FDF6E3 0%,#FADADD 50%,#EAF7F2 100%);
             padding:80px 60px;
             border-radius:28px;">
+
+<div style="height:100px;"></div> -->
+
+
 
 <h2 style="font-weight:500; text-align:center;">下一步</h2>
 
@@ -208,26 +336,24 @@ img {max-width:100%; height:auto;}
   <li>查看本季時間與名額</li>
   <li>閱讀單季完整說明</li>
   <li>
-    <!-- Email 訂閱（Kit） -->
-    <a
-      data-formkit-toggle="3b2085c2c7"
-      href="https://matt-chiang.kit.com/3b2085c2c7"
-      style="text-decoration:underline; cursor:pointer;">
-      留下 Email，收到下一季通知
+    <a href="【你的 Google Form 連結】"
+      target="_blank"
+      style="text-decoration:underline;">
+      報名 4/11｜時間入罐・一日體驗
     </a>
   </li>
 </ul>
-
+<!-- 
 <div style="height:50px;"></div>
 
 <p style="text-align:center; opacity:0.6; font-size:16px;">
 一年只寄四次，只在季節真正開始之前。
-</p>
+</p> -->
 
 <div style="height:50px;"></div>
 
 <p style="text-align:center; opacity:0.6; font-size:16px;">
-我們只在下一季開放前寄出一次通知。
+我們只在下一季開放前寄出通知。
 </p>
 
 </div>
@@ -241,10 +367,12 @@ img {max-width:100%; height:auto;}
 </div>
 </div>
 
+<!-- 
 <script async
   data-uid="3b2085c2c7"
   src="https://matt-chiang.kit.com/3b2085c2c7/index.js">
-</script>
+</script> -->
+
 <!-- /wp:group -->
 </body>
 </html>
