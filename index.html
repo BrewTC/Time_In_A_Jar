@@ -6,7 +6,6 @@
 <title>時間入罐｜春季一日體驗</title>
 
 <style>
-/* ===== 基本設定（mobile first） ===== */
 body {
   margin: 0;
   font-family: "Noto Serif TC", serif;
@@ -16,15 +15,15 @@ body {
   color: #222;
 }
 
+a { color: inherit; text-decoration: none; }
+
 img {
   max-width: 100%;
   height: auto;
   border-radius: 16px;
 }
 
-a { color: inherit; text-decoration: none; }
-
-/* ===== 容器 ===== */
+/* layout */
 .container {
   max-width: 760px;
   margin: 0 auto;
@@ -42,20 +41,20 @@ a { color: inherit; text-decoration: none; }
   background: #FFF6EE;
 }
 
-/* ===== 文字 ===== */
+/* text */
 h1, h2, h3 {
   font-weight: 500;
   line-height: 1.4;
 }
 
 h1 { font-size: 28px; margin: 0 0 12px; }
-h2 { margin: 32px 0 16px; }
+h2 { margin: 0 0 16px; }
 h3 { margin: 0 0 12px; }
 
 p { margin: 12px 0; }
 ul { padding-left: 20px; margin: 12px 0; }
 
-/* ===== Hero ===== */
+/* hero */
 .hero {
   background: linear-gradient(135deg,#FADADD 0%,#EAF7F2 40%,#FFE5D4 100%);
   border-radius: 24px;
@@ -64,7 +63,7 @@ ul { padding-left: 20px; margin: 12px 0; }
   margin-bottom: 32px;
 }
 
-/* ===== CTA ===== */
+/* CTA */
 .cta-primary {
   display: inline-block;
   background: #E86A33;
@@ -82,11 +81,7 @@ ul { padding-left: 20px; margin: 12px 0; }
   text-align: center;
 }
 
-/* ===== Footer 四季 ===== */
-.footer {
-  margin-top: 40px;
-}
-
+/* footer seasons */
 .season-grid {
   display: flex;
   flex-direction: column;
@@ -103,7 +98,7 @@ ul { padding-left: 20px; margin: 12px 0; }
   opacity: 0.6;
 }
 
-/* ===== 桌機微調 ===== */
+/* desktop */
 @media (min-width: 768px) {
   body { font-size: 18px; }
   h1 { font-size: 36px; }
@@ -115,112 +110,185 @@ ul { padding-left: 20px; margin: 12px 0; }
 <body>
 <div class="container">
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>《時間入罐》</h1>
-    <p>用一天的時間完成製作，<br>讓時間在之後慢慢發生。</p>
-  </section>
+<!-- Hero -->
+<section class="hero">
+  <h1>《時間入罐》</h1>
+  <p>用一天的時間完成製作，<br>讓時間在之後慢慢發生。</p>
+</section>
 
-  <!-- 快速理解＋報名 -->
-  <section class="card highlight">
-    <h3>這是一個什麼體驗？</h3>
-    <ul>
-      <li>✔ 一天完成陶罐＋漬物製作</li>
-      <li>✔ 陶罐燒製完成後寄回（約一個月）</li>
-      <li>✔ 適合想在生活裡留下一件會慢慢發生的事</li>
-    </ul>
+<!-- 快速理解 -->
+<section class="card highlight">
+  <h3>這是一個什麼體驗？</h3>
+  <ul>
+    <li>✔ 一天完成陶罐拉胚＋玻璃罐梅漬</li>
+    <li>✔ 陶罐燒製完成後寄回（約一個月）</li>
+    <li>✔ 適合想在生活裡留下一件會慢慢發生的事</li>
+  </ul>
 
-    <p style="text-align:center; margin-top:20px;">
-      <a href="https://forms.gle/jAv4hEUQs3CJ68k68" target="_blank" class="cta-primary">
-        立即報名｜4/18 春季一日體驗
-      </a>
-    </p>
-    <p class="cta-note">填寫約 1 分鐘，非立即付款</p>
-  </section>
+  <p style="text-align:center; margin-top:20px;">
+    <a href="https://forms.gle/jAv4hEUQs3CJ68k68" target="_blank" class="cta-primary">
+      立即報名｜4/18 春季一日體驗
+    </a>
+  </p>
+  <p class="cta-note">填寫約 1 分鐘，非立即付款</p>
+</section>
 
-  <!-- 為什麼不一樣 -->
-  <section class="card">
-    <h2>為什麼大多數體驗會結束得太快？</h2>
-    <p>很多 DIY 課程都有一個共通點：</p>
-    <ul>
-      <li>一個下午</li>
-      <li>完成作品</li>
-      <li>拍照、帶回家</li>
-      <li>然後，就結束了</li>
-    </ul>
+<!-- 為什麼 -->
+<section class="card">
+  <h2>為什麼我們把它設計成一整天？</h2>
+  <p>
+    很多 DIY 體驗在那一天就結束了，<br>
+    但陶罐需要燒製，梅子需要時間轉變，<br>
+    真正的完成，發生在你回到日常生活之後。
+  </p>
+  <p style="font-style:italic; opacity:0.7;">
+    這不是一堂做完就走的課，<br>
+    而是一段會持續發生的時間。
+  </p>
+</section>
+
+<!-- 體驗內容 -->
+<section class="card">
+  <h2>這一天，你實際會做什麼？</h2>
+
+  <p><strong>🕘 陶罐拉胚體驗（約 2 小時）</strong><br>
+    含講師介紹、示範與實際操作，<br>
+    製作一只為梅子發酵而生的陶罐（課後燒製）。
+  </p>
+
+  <p><strong>🍑 玻璃罐梅漬體驗（約 2 小時）</strong><br>
+    認識梅子的成熟狀態與比例，<br>
+    完成一罐當天可帶回的梅子漬物。
+  </p>
+
+  <p><strong>🥯 下午茶時間</strong><br>
+    貝果＋鮪魚優格小黃瓜沙拉餡，<br>
+    搭配一杯飲品，讓這一天慢慢收尾。
+  </p>
+</section>
+
+<!-- 價值拆解 -->
+<section class="card">
+  <h2>如果分開體驗，價值會是這樣</h2>
+  <ul>
+    <li>陶罐拉胚體驗＋燒製：約 1200 元</li>
+    <li>玻璃罐梅漬體驗：約 700 元</li>
+    <li>下午茶餐點：約 300 元</li>
+  </ul>
+  <p><strong>單項合計：約 2200 元</strong></p>
+</section>
+
+<!-- 組合優惠＋親子 -->
+<section class="card highlight">
+  <h2>🌸 春季一日體驗｜組合優惠價</h2>
+
+  <p style="font-size:22px;"><strong>2000 元 / 人</strong></p>
+
+  <p>
+    把原本分開的體驗，<br>
+    放在同一天完成的組合版本。
+  </p>
+
+  <div style="margin-top:32px; padding-top:24px; border-top:1px solid #eee;">
+
+    <h3>👨‍👩‍👧 一大一小親子體驗</h3>
+
     <p>
-      但有些事情，其實在那一天並沒有完成。<br>
-      發酵與等待，往往發生在你回到日常生活之後。
+      如果你想和孩子一起參與，<br>
+      我們也提供一大一小的親子體驗版本。
     </p>
-    <p style="font-style:italic; opacity:0.7;">
-      你有沒有做過一件，其實還沒發生完的事？
-    </p>
-  </section>
 
-  <!-- 課程重點 -->
-  <section class="card">
-    <h2>4/18 春季一日體驗重點</h2>
+    <p style="font-size:20px;"><strong>3300 元 / 組</strong></p>
+
+    <p style="opacity:0.85;">
+      成品是一組，<br>
+      但製作的過程，是一位大人與一位孩子共同參與。
+    </p>
+
     <ul>
-      <li>🕘 上午／下午分段進行（陶罐＋漬物）</li>
-      <li>👥 每梯次 10 人，小班進行</li>
-      <li>📦 陶罐燒製完成後寄回</li>
-      <li>📍 上課地點：童窯工坊（彰化縣員林市）</li>
+      <li>一位大人＋一位小孩共同參與完整製作流程</li>
+      <li>一只陶罐（課後燒製完成）</li>
+      <li>一罐當天完成封存的梅子漬物</li>
+      <li>下午茶：貝果沙拉 × 2</li>
+      <li>飲品 × 2</li>
     </ul>
 
-    <p style="margin-top:20px;">
-      <a href="https://maps.app.goo.gl/beAz2TVH1v4S84XB7"
-         target="_blank"
-         style="display:inline-block; padding:8px 14px; border:1px solid #000; border-radius:20px;">
-        📍 點我看地圖（童窯工坊）
-      </a>
+    <p style="opacity:0.7; font-size:16px;">
+      適合想和孩子一起，<br>
+      為這個春天留下共同記憶的你們。
     </p>
+  </div>
 
-    <p style="text-align:center; margin-top:24px;">
-      <a href="https://forms.gle/jAv4hEUQs3CJ68k68" target="_blank" class="cta-primary">
-        保留一個名額給自己
-      </a>
-    </p>
-    <p class="cta-note">名額有限，額滿即止</p>
-  </section>
+  <p style="text-align:center; margin-top:28px;">
+    <a href="https://forms.gle/jAv4hEUQs3CJ68k68" target="_blank" class="cta-primary">
+      保留一個名額給自己
+    </a>
+  </p>
+  <p class="cta-note">名額有限，額滿即止</p>
+</section>
 
-  <!-- Footer 四季 -->
-  <footer class="footer">
-    <h2 style="text-align:center;">一年，我們只做四件事</h2>
+<!-- 時間地點 -->
+<section class="card">
+  <h2>課程時間與地點</h2>
 
-    <div class="season-grid">
-      <a href="spring.html">
-        <div class="season-card" style="background:#FADADD;">
-          <strong>🌸 春｜梅子的時間</strong><br><br>
-          短暫、錯過、等待。<br><br>
-          <span>→ 查看春季詳細內容</span>
-        </div>
-      </a>
+  <p><strong>日期：</strong>4 / 18（六）</p>
 
-      <a href="summer.html">
-        <div class="season-card" style="background:#EAF7F2;">
-          <strong>🌿 夏｜蔬菜的轉變</strong><br><br>
-          變化、控制、判斷。<br><br>
-          <span>→ 查看夏季詳細內容</span>
-        </div>
-      </a>
+  <p>
+    當日共開放 <strong>兩個場次</strong>，<br>
+    每一場次最多 <strong>10 位參加者</strong>，小班進行。
+  </p>
 
-      <a href="autumn.html">
-        <div class="season-card" style="background:#FFE5D4;">
-          <strong>🍂 秋｜米麴</strong><br><br>
-          轉化、基礎、累積。<br><br>
-          <span>→ 查看秋季詳細內容</span>
-        </div>
-      </a>
+  <p><strong>上課地點：</strong><br>
+    童窯工坊<br>
+    彰化縣員林市浮圳路一段 205 號
+  </p>
 
-      <a href="winter.html">
-        <div class="season-card" style="background:#FDF6E3;">
-          <strong>❄️ 冬｜長時間熟成</strong><br><br>
-          慢、陪伴、回顧。<br><br>
-          <span>→ 查看冬季詳細內容</span>
-        </div>
-      </a>
-    </div>
-  </footer>
+  <p>
+    <a href="https://maps.app.goo.gl/beAz2TVH1v4S84XB7" target="_blank"
+       style="display:inline-block; padding:8px 14px; border:1px solid #000; border-radius:20px;">
+      📍 點我看地圖
+    </a>
+  </p>
+</section>
+
+<!-- Footer 四季 -->
+<footer>
+  <h2 style="text-align:center;">一年，我們只做四件事</h2>
+
+  <div class="season-grid">
+    <a href="spring.html">
+      <div class="season-card" style="background:#FADADD;">
+        <strong>🌸 春｜梅子的時間</strong><br><br>
+        短暫、錯過、等待。<br><br>
+        <span>→ 查看春季詳細內容</span>
+      </div>
+    </a>
+
+    <a href="summer.html">
+      <div class="season-card" style="background:#EAF7F2;">
+        <strong>🌿 夏｜蔬菜的轉變</strong><br><br>
+        變化、控制、判斷。<br><br>
+        <span>→ 查看夏季詳細內容</span>
+      </div>
+    </a>
+
+    <a href="autumn.html">
+      <div class="season-card" style="background:#FFE5D4;">
+        <strong>🍂 秋｜米麴</strong><br><br>
+        轉化、基礎、累積。<br><br>
+        <span>→ 查看秋季詳細內容</span>
+      </div>
+    </a>
+
+    <a href="winter.html">
+      <div class="season-card" style="background:#FDF6E3;">
+        <strong>❄️ 冬｜長時間熟成</strong><br><br>
+        慢、陪伴、回顧。<br><br>
+        <span>→ 查看冬季詳細內容</span>
+      </div>
+    </a>
+  </div>
+</footer>
 
 </div>
 </body>
