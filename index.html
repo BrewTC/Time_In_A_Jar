@@ -104,6 +104,67 @@ ul { padding-left: 20px; margin: 12px 0; }
   h1 { font-size: 36px; }
   .container { padding: 40px 20px 100px; }
 }
+
+/* =========================
+   Carousel – square image friendly
+   ========================= */
+.carousel-wrapper {
+  margin: 24px 0 32px;
+}
+
+.carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 16px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  flex: 0 0 80%;
+  max-width: 280px;
+  opacity: 1;
+  transition: all 0.3s ease;
+
+}
+
+.carousel-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;     /* ✅ 正方圖穩定呈現 */
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carousel-hint {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.45;
+  margin-top: 6px;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+  .carousel {
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .carousel-item {
+    width: 240px;
+  }
+  
+  .carousel-item:focus,
+  .carousel-item:hover {
+    opacity: 1;
+  }
+
+}
 </style>
 </head>
 
@@ -115,6 +176,28 @@ ul { padding-left: 20px; margin: 12px 0; }
   <h1>《時間入罐》</h1>
   <p>用一天的時間完成製作，<br>讓時間在之後慢慢發生。</p>
 </section>
+
+<!-- =========================
+       Image Carousel
+       （世界觀建立，不說明）
+       ========================= -->
+  <section class="carousel-wrapper">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="./img/product1.png" alt="陶罐與梅子玻璃罐">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/product2.png" alt="春日光線下的梅子保存">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/product3.png" alt="手作陶罐與梅漬">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/product4.png" alt="完成後的梅子保存罐">
+      </div>
+    </div>
+    <div class="carousel-hint">← 左右滑動，看時間的樣子</div>
+  </section>
 
 <!-- 快速理解 -->
 <section class="card highlight">
@@ -151,12 +234,12 @@ ul { padding-left: 20px; margin: 12px 0; }
 <section class="card">
   <h2>這一天，你實際會做什麼？</h2>
 
-  <p><strong>🕘 陶罐拉胚體驗（約 2 小時）</strong><br>
+  <p><strong>🕘 陶罐拉胚體驗（約 1.5 小時）</strong><br>
     含講師介紹、示範與實際操作，<br>
     製作一只為梅子發酵而生的陶罐（課後燒製）。
   </p>
 
-  <p><strong>🍑 玻璃罐梅漬體驗（約 2 小時）</strong><br>
+  <p><strong>🍑 玻璃罐梅漬體驗（約 1.5 小時）</strong><br>
     認識梅子的成熟狀態與比例，<br>
     完成一罐當天可帶回的梅子漬物。
   </p>
